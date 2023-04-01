@@ -1,7 +1,7 @@
-name: "Eslint Worklow"
+name: ESLint Workflow
 on: [push, pull_request]
 jobs:
-  build
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -9,4 +9,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: ESLint
-        run: npm run 
+        run: npm run lint
