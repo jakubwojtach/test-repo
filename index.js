@@ -1,6 +1,9 @@
 const test = 'test';
 const test2 = 'test2';
 
-return {
+const init = () => ({
   test,
-};
+  test2,
+});
+
+init();
